@@ -5,7 +5,7 @@ namespace MVC;
 use MVC\LIB\FrontController;
 
 ob_start();
-ini_set('session.cookie_lifetime', 86400);
+
 session_start();
 
 if (!defined('DS')) {

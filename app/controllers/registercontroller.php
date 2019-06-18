@@ -63,6 +63,9 @@ class RegisterController extends AbstractController
                     $this->User_img
                 );
                 if ($user->create()) {
+                    $msg = "<h1>Thank you </h1>";
+                    $headers = 'From: ' . 'powerismynickname2016@gmail.com' . '\r\n';
+                    mail($this->User_email, 'Register', $msg, $headers);
                     //Set The Session
                     session_regenerate_id(true);
                     $_SESSION['userid'] = $this->User_id;
