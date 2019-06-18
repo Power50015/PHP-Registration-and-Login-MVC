@@ -45,8 +45,7 @@ class LoginController extends AbstractController
                         session_regenerate_id(true);
                         $_SESSION['userid'] = $id;
                         if ($_POST['check']) {
-
-                            $_SESSION['userid'] = $id;
+                            setcookie('userid', $_SESSION['userid'], time() + (86400 * 30 * 30), "/");
                         }
                         $this->redirect('/profile/');
                     } else {

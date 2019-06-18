@@ -10,7 +10,7 @@ class LogoutController extends AbstractController
     {
         // Unset all of the session variables.
         $_SESSION = array();
-
+        setcookie('userid', NULL, 0, '/');
         // If it's desired to kill the session, also delete the session cookie.
         // Note: This will destroy the session, and not just the session data!
         if (ini_get("session.use_cookies")) {

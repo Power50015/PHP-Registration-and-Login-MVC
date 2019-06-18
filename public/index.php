@@ -8,6 +8,12 @@ ob_start();
 
 session_start();
 
+
+if (isset($_COOKIE['userid'])) {
+
+    $_COOKIE['userid'] != NULL ? $_SESSION['userid'] : '';
+}
+
 if (!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
 }
