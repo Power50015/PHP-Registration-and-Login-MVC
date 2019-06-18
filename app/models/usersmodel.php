@@ -1,13 +1,13 @@
 <?php
-namespace MVC\MODELS;
+namespace MVC\Models;
 
 class UsersModel extends AbstractModel
 {
-    private $User_id;
-    private $User_name;
-    private $User_email;
-    private $User_password;
-    private $User_img;
+    public $User_id;
+    public $User_name;
+    public $User_email;
+    public $User_password;
+    public $User_img;
 
 
     protected static $tableName = 'users';

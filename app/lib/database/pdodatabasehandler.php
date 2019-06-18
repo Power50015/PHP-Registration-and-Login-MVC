@@ -1,5 +1,5 @@
 <?php
-namespace MVC\LIB\DATABASE;
+namespace MVC\Lib\Database;
 
 class PDODatabaseHandler extends DatabaseHandler
 {

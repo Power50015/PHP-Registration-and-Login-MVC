@@ -1,14 +1,13 @@
 <?php
 namespace MVC\Controllers;
 
+use MVC\LIB\Helper;
+
 class IndexController extends AbstractController
 {
+    use Helper;
     public function defaultAction()
     {
-        $this->_view();
-    }
-    public function addAction()
-    {
-        $this->_view();
+        $this->redirect('/login/');
     }
 }
